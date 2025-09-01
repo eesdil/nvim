@@ -8,3 +8,6 @@ vim.api.nvim_set_keymap(
   "<cmd>lua require('package-info').toggle()<cr>",
   { silent = true, noremap = true }
 )
+
+vim.api.nvim_set_keymap("n", "<leader>gs", "<cmd>DiffviewOpen<cr>", { silent = true, noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>gh", "<cmd>DiffviewFileHistory<cr>", { silent = true, noremap = true })
